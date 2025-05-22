@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - OnkLabs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #ffffff;
+            color: #000000;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3 {
+            color: #000000;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #000000;
+            font-weight: 500;
+        }
+        
+        h3 {
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        p, ul, ol {
+            font-size: 14px;
+            margin-bottom: 16px;
+            font-weight: 300;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        ul ul {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #000000;
+            text-decoration: underline;
+            font-weight: 400;
+            transition: all 0.2s ease;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            background: #000000;
+            color: #ffffff;
+            padding: 2px 4px;
+        }
+        
+        hr {
+            border: 0;
+            border-top: 1px solid #000000;
+            margin: 40px 0;
+        }
+        
+        .container {
+            background: #ffffff;
+            padding: 60px 40px;
+            border: 1px solid #000000;
+        }
+        
+        .company-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .company-logo {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .last-updated {
+            background: #000000;
+            color: #ffffff;
+            padding: 12px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .table-of-contents {
+            background: #ffffff;
+            padding: 30px;
+            margin: 40px 0;
+            border: 1px solid #000000;
+        }
+        
+        .table-of-contents h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        .table-of-contents ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            counter-reset: section-counter;
+        }
+        
+        .table-of-contents li {
+            counter-increment: section-counter;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+        }
+        
+        .table-of-contents li:before {
+            content: counter(section-counter, decimal-leading-zero);
+            position: absolute;
+            left: 0;
+            top: 8px;
+            font-weight: 500;
+            font-size: 12px;
+            width: 30px;
+        }
+        
+        .table-of-contents li:last-child {
+            border-bottom: none;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 14px;
+            margin-left: 40px;
+            display: block;
+        }
+        
+        .table-of-contents a:hover {
+            background: #000000;
+            color: #ffffff;
+            padding: 4px 8px;
+            margin-left: 32px;
+        }
+        
+        .highlight-box {
+            background: #ffffff;
+            padding: 30px;
+            border: 2px solid #000000;
+            margin: 30px 0;
+        }
+        
+        .highlight-box p:first-child {
+            margin-top: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        .important-note {
+            background: #000000;
+            color: #ffffff;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .important-note p, .important-note li {
+            color: #ffffff;
+        }
+        
+        .important-note p:first-child {
+            margin-top: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-section {
+            background: #000000;
+            color: #ffffff;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .contact-section h2 {
+            color: #ffffff;
+            margin-top: 0;
+            border-bottom: 1px solid #ffffff;
+            margin-bottom: 30px;
+        }
+        
+        .contact-section p {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #ffffff;
+            color: #000000 !important;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 20px 0;
+            border: 2px solid #ffffff;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .email-link:hover {
+            background: #000000;
+            color: #ffffff !important;
+            border: 2px solid #ffffff;
+            padding: 15px 30px;
+        }
+        
+        strong {
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            h3 {
+                font-size: 14px;
+            }
+            
+            p, ul, ol {
+                font-size: 13px;
+            }
+            
+            .table-of-contents {
+                padding: 20px;
+            }
+            
+            .table-of-contents a {
+                margin-left: 30px;
+            }
+            
+            .table-of-contents a:hover {
+                margin-left: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 30px 15px;
+                border: none;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 13px;
+            }
+            
+            p, ul, ol {
+                font-size: 12px;
+            }
+            
+            .table-of-contents {
+                padding: 15px;
+            }
+            
+            .highlight-box, .important-note, .contact-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="company-header">
+            <div class="company-logo">ONKLABS</div>
+            <h1>PRIVACY POLICY</h1>
+        </div>
+        
+        <div class="last-updated">
+            <strong>Last Updated: May 22, 2025</strong>
+        </div>
+        
+        <div class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#1-introduction">Introduction</a></li>
+                <li><a href="#2-information-we-collect">Information We Collect</a></li>
+                <li><a href="#3-how-we-use-information">How We Use Information</a></li>
+                <li><a href="#4-information-sharing-and-disclosure">Information Sharing and Disclosure</a></li>
+                <li><a href="#5-data-security">Data Security</a></li>
+                <li><a href="#6-childrens-privacy">Children's Privacy</a></li>
+                <li><a href="#7-your-rights">Your Rights</a></li>
+                <li><a href="#8-changes-to-this-privacy-policy">Changes to This Privacy Policy</a></li>
+                <li><a href="#9-contact-us">Contact Us</a></li>
+            </ol>
+        </div>
+        
+        <h2 id="1-introduction">1. Introduction</h2>
+        <p>This Privacy Policy governs your use of mobile applications ("Applications") created by OnkLabs. Our Applications are designed for users of all ages, including children, and we prioritize privacy by not collecting personal data directly. The only third-party service we use is Google AdMob for displaying advertisements. We comply with applicable laws, including the California Consumer Privacy Act (CCPA), the Children's Online Privacy Protection Act (COPPA), and Vietnam's data protection regulations.</p>
+        
+        <h2 id="2-information-we-collect">2. Information We Collect</h2>
+        
+        <h3>2.1 Application Data</h3>
+        <ul>
+            <li><strong>Local Storage</strong>: Our Applications store progress, scores, and preferences only locally on your device.</li>
+            <li><strong>Persistence</strong>: This data remains on your device until you uninstall the Application.</li>
+            <li><strong>Access</strong>: We have no ability to access data stored locally on your device.</li>
+        </ul>
+        
+        <h3>2.2 Google AdMob</h3>
+        <ul>
+            <li><strong>Third-Party Collection</strong>: If ads are enabled, Google AdMob may collect limited data, such as:</li>
+            <ul>
+                <li>Identifiers (e.g., Advertising ID for personalized ads, if enabled).</li>
+                <li>Device information (e.g., device type, operating system).</li>
+            </ul>
+            <li><strong>No Personal Information Collected</strong>: If ads are disabled or not used in the Application, no personal information is collected.</li>
+        </ul>
+        
+        <h2 id="3-how-we-use-information">3. How We Use Information</h2>
+        
+        <h3>3.1 Application Data</h3>
+        <ul>
+            <li>Local data is <strong>only</strong> used to provide Application functionality, such as saving game progress or preferences.</li>
+            <li>This data is <strong>never</strong> transmitted to our servers or any third parties.</li>
+        </ul>
+        
+        <h3>3.2 Google AdMob Data</h3>
+        <ul>
+            <li>Data collected by Google AdMob is used solely to deliver ads and optimize ad relevance.</li>
+            <li>We do not have access to or control over the data collected by AdMob.</li>
+            <li>For details on AdMob's data practices, please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+        </ul>
+        
+        <h2 id="4-information-sharing-and-disclosure">4. Information Sharing and Disclosure</h2>
+        <ul>
+            <li><strong>No Sharing by OnkLabs</strong>: We do not collect or share any personal data from our Applications.</li>
+            <li><strong>Third-Party Services</strong>: Google AdMob may collect data for ad delivery, which may be considered a "sale" under CCPA. See Section 7 for opt-out options.</li>
+            <li><strong>Legal Requirements</strong>: We may disclose information if required by law, though we do not collect personal data to disclose.</li>
+        </ul>
+        
+        <h2 id="5-data-security">5. Data Security</h2>
+        <div class="important-note">
+            <p>Security Measures:</p>
+            <ul>
+                <li>All Application data is stored locally on your device using standard secure storage methods.</li>
+                <li>Since we do not collect or store your data on our servers, there is no risk of data breach from our systems.</li>
+                <li>The security of AdMob data is handled according to Google's security practices.</li>
+            </ul>
+        </div>
+        
+        <h2 id="6-childrens-privacy">6. Children's Privacy</h2>
+        <p>Our Applications are suitable for users of all ages, including children under 13. We comply with the Children's Online Privacy Protection Act (COPPA) and take the following measures:</p>
+        
+        <div class="highlight-box">
+            <p>Child Safety Measures:</p>
+            <ul>
+                <li><strong>No Personal Data Collection</strong>: We do not collect personal information from any users, including children.</li>
+                <li><strong>Local Storage</strong>: All Application data (e.g., game progress) remains stored only on the user's device.</li>
+                <li><strong>AdMob for Children</strong>:
+                    <ul>
+                        <li>For users under 13, we use "Tag For Child-Directed Treatment" to ensure only non-personalized, child-appropriate ads are shown.</li>
+                        <li>For users aged 13–18, we apply "Tag For Under Age of Consent" to limit ad personalization unless parental consent is provided.</li>
+                        <li>Parents or guardians can contact us at onklabs@gmail.com to provide or revoke consent for users under 13.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <h2 id="7-your-rights">7. Your Rights</h2>
+        
+        <h3>7.1 Your Data Control Rights</h3>
+        <ul>
+            <li><strong>Local Data Removal</strong>: You can delete all locally stored data by uninstalling the Application.</li>
+            <li><strong>No Account Creation</strong>: Our Applications do not require accounts, so no account deletion is necessary.</li>
+        </ul>
+        
+        <h3>7.2 CCPA Rights (California Residents)</h3>
+        <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li><strong>Right to Know</strong>: Request details about the categories of personal information we collect, use, or share (e.g., Advertising ID for ads).</li>
+            <li><strong>Right to Delete</strong>: Request deletion of your personal information, subject to exceptions (note: we do not collect personal data).</li>
+            <li><strong>Right to Opt-Out of Sale</strong>: Opt out of the sale of your personal information (e.g., disable personalized ads via AdMob).</li>
+            <li><strong>Right to Non-Discrimination</strong>: We will not discriminate against you for exercising your CCPA rights.</li>
+        </ul>
+        <p>To exercise these rights or opt out of personalized ads ("Do Not Sell My Personal Information"), contact us at onklabs@gmail.com or adjust your ad settings in the App or device settings. We will respond to verifiable requests within 45 days.</p>
+        
+        <h3>7.3 AdMob-Related Rights</h3>
+        <p>For data Google AdMob may collect, you can:</p>
+        <ul>
+            <li>Reset your device's Advertising ID in your device settings.</li>
+            <li>Opt out of personalized advertising in your device settings or via the App's ad settings.</li>
+            <li>Exercise your data rights directly with Google according to their <a href="https://policies.google.com/privacy">Privacy Policy</a>.</li>
+        </ul>
+        
+        <h3>7.4 Compliance with Other Regulations</h3>
+        <p>We comply with applicable data protection regulations, including:</p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR) for EEA/UK users.</li>
+            <li>Other applicable privacy laws</li>
+        </ul>
+        <p>Since we do not collect personal data, most data subject rights (e.g., access, correction) are automatically satisfied.</p>
+        
+        <h2 id="8-changes-to-this-privacy-policy">8. Changes to This Privacy Policy</h2>
+        <div class="important-note">
+            <p>Policy Updates:</p>
+            <ul>
+                <li>Updating the "Last Updated" date at the top of this Privacy Policy.</li>
+                <li>Providing notification through Application updates where applicable.</li>
+            </ul>
+            <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+        </div>
+        
+        <div class="contact-section" id="9-contact-us">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <a href="mailto:onklabs@gmail.com" class="email-link">onklabs@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
